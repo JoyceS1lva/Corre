@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2? family= Arima & family= Arimo & display=swap');
+
 *{
     margin: 0;
     border: 0;
@@ -11,6 +13,7 @@ width: 100%;
 height: 100%;
 background-image: url(img/gifchoc.webp);
 background-size: cover;
+
 }
 
 body img{
@@ -27,11 +30,20 @@ background-color: #f0e3c2;
 z-index: 1;
 }
 
+
+main h3{
+	font-family: 'Arima';
+	font-weight: 500;
+}
+
+
 header{
     width: 90%;
     margin: auto;
+	font-family: 'Arima'serif;
 	z-index: 1;
 }
+
 
 
 *:after,
@@ -78,8 +90,8 @@ vertical-align:middle;
 
 .logo img{
 	margin-left: 480px;
-    width:150px ;
-    left: 150px;
+    width: 200px ;
+	height: 200px;
     border-radius: 100%;
 	
 }
@@ -97,12 +109,13 @@ vertical-align:middle;
 }
 
 .header-logo{
+	position: absolute;
 	height:100%;
 	text-align:center;	
 }
 
 .header-logo .logo,.header-logo .logo img{
-	height:100%;
+	position: absolute;
 }
 
 .navleft{
@@ -128,7 +141,7 @@ color: black;
 }
 
 .navbar .btn-navbar .icon-bar {
-	display: block;
+	
 	width: 23px;
 	height: 3px;
 	-webkit-border-radius: 1px;
@@ -139,7 +152,7 @@ color: black;
 }
 
 .navbar .btn-navbar {
-	position: absolute;
+	/*position absolute daqui*/
 	top: 18px;
 	right: 20px;
 	z-index: 3;
@@ -162,12 +175,12 @@ color: black;
 	padding: 6px 9px 9px;
 	box-shadow: none;
 	border-radius: 0;
-	display:none;
+	/*tirei display none*/
 }
 
 .navigation li a{
 	font-weight:400;
-	font-size:22px;
+	font-size:30px;
 	line-height:30px;
 	padding:18px;
 }
@@ -223,7 +236,8 @@ text-shadow:none;
 	margin: 50px;
 	margin-left: 150px;
 	color: #f0e3c2;
-	font-size: 30px;
+	font-size: 40px;
+	font-family: 'Arimo';
 	border-radius: 10px;
 	padding: 5px;
 	font-weight:bold;
@@ -286,8 +300,8 @@ text-shadow:none;
 	color: #ffffff;
 	border-radius: 50%;
 	padding: 3px;
-	width: 100px;
-	height: 100px;
+	width: 90px;
+	height: 90px;
 	text-align: center;
 	text-decoration: none;
 	z-index: 100;
@@ -296,6 +310,10 @@ text-shadow:none;
   
   .icon .fab{
 	padding-top: 9px;
+  }
+
+  .fab{
+	margin-top: 12px;
   }
   
   .icon:hover{
@@ -311,8 +329,8 @@ text-shadow:none;
 	width: 100%;
 	height: 40px;
 	margin: auto;
+	margin-top: 15px;
 	text-align: center;
-	/*add fonte*/
 }
 
 /* PAO DE MEL*/
@@ -329,6 +347,8 @@ text-shadow:none;
     height: 200px;
     background-color:#FFE089 ;
     border-radius: 100%;
+	border: 2px dashed brown;
+	border-spacing: 10px;
 }
 
 .paocaixa{
@@ -338,10 +358,20 @@ text-shadow:none;
 	margin: 30px;
 }
 
+.paocaixa h6{
+font-size: 20px;
+}
+
+.paocaixa p{
+	font-size: 18px;
+	font-weight: bold;
+}
+
 .circulo img{
 	width: 170px;
 	height: 170px ;
 }
+
 
 
 /*TRUFAS*/
@@ -361,6 +391,15 @@ text-shadow:none;
 	height: auto;
 	margin: 50px;
 	text-align: center;
+}
+
+.caixatrufa h6{
+	font-size: 20px;
+}
+
+.caixatrufa p{
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .caixatrufa:hover{
@@ -404,6 +443,16 @@ text-shadow:none;
 	text-align: center;
 }
 
+.boloseco h6{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.boloseco p{
+	font-size: 18px;
+	font-weight: bold;
+}
+
 .imgbolo img{
 	width: 300px;
 	height: 200px;
@@ -439,6 +488,14 @@ text-shadow:none;
 	text-align: center;
 }
 	
+.bolopotevalorsabor h6{
+	font-size: 20px;
+}
+
+.bolopotevalorsabor p{
+	font-size: 18px;
+	font-weight: bold;
+}
 
 /*AVALIAÇÃO DOS CLIENTES*/
 #clientes{
@@ -451,12 +508,24 @@ text-shadow:none;
 	align-items: center;
 }
 
+#clientes h4{
+	font-family: 'Arima';
+	font-size: 35px;
+}
+
+#clientes p{
+	font-family: 'Arimo'sans-serif;
+	font-size: 18px;
+	padding: 5px;
+}
+
 .clientesavalia{
-   width:350px ;
+   width:300px ;
    height: 400px;
    border-radius: 15px;
    background-color: #fff;
    text-align: center;
+   margin-top: 10px;
 }
 
 .clientesavalia img{
@@ -465,6 +534,49 @@ text-shadow:none;
 	border-radius: 15px;
 }
 
+#wavesobrenos{
+background-color: #f0e3c2;
+}
+
+/*SOBRE NÓS*/
+
+#sobrenos{
+	background-color: #d77c04;
+	width: 100%;
+	height: 500px;
+	display: flex;
+	flex-direction: row;
+}
+
+#fotoleft{
+width: 50%;
+}
+
+#fotoleft img{
+	width: 50%;
+	height: 400px;
+	margin-left: 170px;
+	margin-top: 40px;
+}
+
+
+#texto{
+	width: 40%;
+	text-align: center;
+	margin-top: 40px;
+
+}
+
+#texto h5{
+	font-family: 'Arima';
+	font-size:30px ;
+
+}
+
+
+#texto p{
+	font-family: 'Arimo'sans-serif;
+}
 
 /*FOOTER*/
 footer{
@@ -474,6 +586,7 @@ footer{
 }
 
 svg{
+background-color: #d77c04;
 width:100%;
 margin:auto;
 }
@@ -482,14 +595,17 @@ margin:auto;
 	width: 90%;
 	margin: auto;
 	height: 300px;
+	
 }
 
 .logoinfo img{
- width: 150px;
- height: 150px;
+ width: 200px;
+ height: 200px;
+ margin-left: 465px;
 
 }
 .main-footer{
+	height: 300px;
 	padding: 70px 0;
 	display: flex;
 	justify-content: space-around;
@@ -501,11 +617,12 @@ margin:auto;
   }
   
   .main-footer h1 {
-	font-size: 22px;
+	font-size: 30px;
 	line-height: 117%;
 	color: #000;
 	margin-bottom: 10px;
 	font-weight: 500;
+	font-family: 'Arima';
   }
   
   .main-footer h2 {
@@ -532,19 +649,15 @@ margin:auto;
 	color: #000;
   }
   
-  .logoinfo p {
-	color: #000;
-	font-size: 17px;
-	margin-top: 5px;
-  }
   
   .contact-details {
-	margin-top: 20px;
+	margin-left: -80px;
+	margin-top: -200px;
   }
   
   .contact-details li {
 	list-style: none;
-	margin: 10px 0;
+	
   }
   
   .contact-details li a {
@@ -554,7 +667,6 @@ margin:auto;
   
   .contact-details .fa {
 	color: #000;
-	margin-right: 10px;
   }
   
   .sociallogos{
@@ -565,7 +677,7 @@ margin:auto;
 	padding:0 10px;
 	text-decoration:none;
 	color:#ffffff;
-	font-size:22px;
+	font-size:35px;
   }
   
   .com ul li{
@@ -595,3 +707,7 @@ margin:auto;
 	} 
   
   }
+
+
+  /*RESPONSIVO CELULAR*/
+  
