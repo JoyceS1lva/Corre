@@ -718,7 +718,7 @@ margin:auto;
 
 
   /*RESPONSIVO CELULAR*/
-  @media only screen and (max-width:390px){
+  @media only screen and (max-width:800px){
 	body{
 		width: 100%;
 	}
